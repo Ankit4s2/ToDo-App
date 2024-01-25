@@ -1,0 +1,45 @@
+body{
+    background-image: linear-gradient(to right top, #063f34, #006a46, #1c974a, #5dc43d, #a7ef06);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.to-do-list-container{
+    background-color: white;
+    height: 300px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+.to-do-list-title{
+    background-color:#a7ef06;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    padding: 5px;
+    border-radius: 6px 6px 0 0;
+}
+.task-input-container{
+    padding:5px;
+}
+.to-do-task-input{
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 4px;
+    height: 15px;
+}
+.add-btn{
+    background-color:#a7ef06;
+}
+.task-panel{
+    border: 1px solid #a7ef06;
+    border-radius: 4px;
+    padding: 5px 8px;
+    margin: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.tasks-panel:hover{
+    cursor: pointer;
+}

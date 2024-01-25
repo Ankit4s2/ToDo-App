@@ -4,54 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List App</title>
-    <style>
-        body{
-            background-image: linear-gradient(to right top, #063f34, #006a46, #1c974a, #5dc43d, #a7ef06);
-            background-repeat: no-repeat;
-            height: 100vh;
-        }
-        .to-do-list-container{
-            background-color: white;
-            height: 300px;
-            width: 250px;
-            border: 2px solid black;
-            border-radius: 8px;
-            margin: 10px auto;
-        }
-        .to-do-list-title{
-            background-color:#a7ef06;
-            color: white;
-            font-size: 20px;
-            text-align: center;
-            margin-top: 0;
-            padding: 5px;
-            border-radius: 6px 6px 0 0;
-        }
-        .task-input-container{
-            padding:5px;
-        }
-        .to-do-task-input{
-            margin-left: 6px;
-            margin-right: 6px;
-            border-radius: 4px;
-            height: 15px;
-        }
-        .add-btn{
-            background-color:#a7ef06;
-        }
-        .task-panel{
-            border: 1px solid #a7ef06;
-            border-radius: 4px;
-            padding: 5px 8px;
-            margin: 5px 10px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .tasks-panel:hover{
-            cursor: pointer;
-        }
-       
-    </style>
+    <style rel="stylesheet" href="./style.css"></style>
 </head>
 <body>
     <div class="to-do-list-container">
@@ -88,9 +41,9 @@
 
                 taskContainer.innerHTML = "";
 
-                 for(let i=0; i<toDoList.length; i++){
+                for(let i=0; i<toDoList.length; i++){
                     const task = toDoList[i];
-                   taskContainer.innerHTML += `<div class="task-panel"> ${task} <span class="bin" onclick="removeItem(${i})">🗑️</span></div>`;
+                taskContainer.innerHTML += `<div class="task-panel"> ${task} <span class="bin" onclick="removeItem(${i})">🗑️</span></div>`;
                 }
             }
 
